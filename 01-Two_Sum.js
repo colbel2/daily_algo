@@ -67,3 +67,16 @@ var twoSum = function(nums, target){        // function named twoSum has 2 param
     }
 };
 
+
+//rewrite for practice
+var twoSum = function (nums, target){       //create a variable named twoSum that is a function with 2 parameters, nums and target
+    let map = new Map();                    //create a varablie named map that uses the Map() method
+    for( i = 0; i < nums.length; i++){      //for loop it iterate thru nums
+        let num1 = nums[i];                 //variable named num1 that is the current index of nums
+        let num2 = target - num1;           //variable named num2 that is the target value - num1
+        if( map.has(num2)){                 //if loop. if map has(js method) num2 then...
+            return [i, map.get(num2)];      //return array, index and num2. hint...use get method to retrieve num2 from map
+        }               
+        map.set(num1, i);                   //if num2 is not in our array, set num1 as the current index value and proceed back thru loop
+    }
+}
