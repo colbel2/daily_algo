@@ -59,3 +59,4 @@ console.log(longestCommonPrefix(["flower","flow","flight"])); //test case 1
 //make a variable named prefix and set it as the 0 index value of strs
 //use a for loop to iterate thru the strs input, starting at 1 since prefix is 0
 //use a while loop inside of the for loop to loop
+// 
