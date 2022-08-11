@@ -1,0 +1,27 @@
+Create project folder   02_flask_web_app
+
+create website folder   website
+
+create main.py inside project folder 02_flask_web_app
+
+create static and templates folders     static templates
+
+create __init__.py
+        auth.py
+        models.py
+        views.py inside of templates folder
+
+install flask with pip install flask
+    pip isntalls python packages
+
+install flask login with pip install flask-login
+
+install flask sql alchemy with pip install flask-sqlalchemy
+
+go into __init__.py file and add the below code
+    from flask import flask
+
+    def create_app():
+        app = Flask(__name__)
+        app.config['SECRET_KEY'] =''
+        return app
